@@ -8,44 +8,68 @@
 */
 
 @import 'normalize';
-@import 'typography';
+@import 'config';
 @import 'navigation';
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
+
 /*
 ====================================
-Default Styling
+Hero Section
 ====================================
 */
 
-img {
-	max-width: 100%;
+.hero {
+	height: 100vh;
+	display: flex;
+	position: relative;
+
+	.triangleL {
+		width: 0;
+		height: 0;
+	    border-bottom: 100vh solid $lightteal;
+	    border-right: 800px solid transparent;
+	    position: absolute;
+	    left: 0;
+	    bottom: 0;
+	    z-index: 0;
+	}
+
+	.triangleR {
+		width: 0;
+		height: 0;
+	    border-top: 100vh solid $lightgrey;
+	    border-left: 800px solid transparent;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	    z-index: 0;
+	}
+
+	.headerText {
+		margin: auto;
+		border: .4rem solid $yellow;
+		padding: 5rem 6rem;
+		z-index: 10;
+	}
 }
 
-body {
-	color: #333;
+.about {
+	.profileImg {
+		width: 25%;
+		float: left;
+	}
+
+	.bioText {
+		width: 60%;
+		float: left;
+	}
 }
 
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
+.expertise {
+	h2 {
+		text-align: right;
+	}
 }
-
-.content {
-	float: left;
-	width: 65%;
-	margin-right: 5%;
-}
-
-.full {
-	width: 100%;
-}
-
-
-
-
-
-
-
 
