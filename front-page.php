@@ -39,7 +39,7 @@
 </section> -->
 
 <!-- Expertise -->
-<section class="expertise">
+<section class="expertise" id="expertise">
 	<div class="wrapper">	
 
 		<!-- Header Text -->
@@ -65,7 +65,7 @@
 </section>
 
 <!-- Skills -->
-<section class="skills">
+<section class="skills" id="skills">
 	<div class="wrapper">
 
 		<!-- Header Text -->
@@ -91,7 +91,8 @@
 </section>
 
 <!-- Portfolio / Work -->
-<section class="work">
+<section class="work" id="work">
+	<div class="portfolioBackground"></div>
 	<div class="wrapper">
 		
 		<!-- Header Text -->
@@ -124,7 +125,9 @@
 		<?php endwhile; // end of repeater loop ?>
 	
 	</div>
+
 </section>
+
 
 <!-- Contact -->
 <section id="contact" class="contact">

@@ -103,20 +103,24 @@ Hero Section
 .expertise_item_section {
 	background-color: $lightgrey;
 
+	.wrapper {
+		@include flexRow;
+	}
+
 }
 
 .expertise_icon {
-	height: 15rem;
+	height: 13rem;
 	position: relative;
 
 	img {
 		@include centerer;
+		width: 50%;
 	}
 }
 
 .expertise_item {
-	float: left;
-	width: 33.3%;
+	width: 30%;
 	text-align: center;
 }
 
@@ -137,10 +141,10 @@ Hero Section
 .skills_item_section {
 	margin: 0 auto;
 	text-align: center;
+	@include flexRow;
 }
 
 .skill_item {
-	float: left;
 	width: calc(100% / 7);
 	padding: 2rem;
 	text-align: center;
@@ -150,8 +154,10 @@ Hero Section
 		text-align: center;
 		position: relative;
 
+
 		img {
 			@include centerer;
+			width: 80%;
 		}
 	}
 }
@@ -161,14 +167,35 @@ Hero Section
 
 .work {
 	clear: both;
+	position: relative;
+	overflow: hidden;
+
+	.portfolioBackground {
+		position: absolute;
+		background-color: $lightgrey;
+		transform:  translate(-8rem, 0) rotate(9deg);
+		width: 1600px;
+		height: 2600px;
+		top: 10rem;
+		z-index: 1;
+	}
+
+	.wrapper {
+		position: relative;
+		z-index: 5;
+	}
+
 
 	h2 {
 		text-align: center;
+		z-index: 5;
 	}
 }
 
+
 .portfolio_item {
 	padding: 5rem 0 ;
+
 }
 
 .portfolio_item_image, .portfolioInfo {
@@ -184,6 +211,10 @@ Hero Section
 	margin: 5%;
 	padding: 0 1rem;
 	text-align: left;
+
+	.divider {
+		margin-left: 0;
+	}
 
 	.seeLiveButton {
 		margin: 4rem 0;
