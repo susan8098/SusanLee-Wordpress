@@ -22,36 +22,57 @@ Hero Section
 
 .hero {
 	height: 100vh;
-	display: flex;
 	position: relative;
+	z-index: 0;
+	
+	// .triangleL {
+	// 	width: 0;
+	// 	height: 0;
+	//     border-bottom: 100vh solid $lightteal;
+	//     border-right: 800px solid transparent;
+	//     position: absolute;
+	//     left: 0;
+	//     bottom: 0;
+	//     z-index: 0;
+	// }
 
-	.triangleL {
-		width: 0;
-		height: 0;
-	    border-bottom: 100vh solid $lightteal;
-	    border-right: 800px solid transparent;
-	    position: absolute;
-	    left: 0;
-	    bottom: 0;
-	    z-index: 0;
-	}
+	// .triangleR {
+	// 	width: 0;
+	// 	height: 0;
+	//     border-top: 100vh solid $lightgrey;
+	//     border-left: 800px solid transparent;
+	//     position: absolute;
+	//     right: 0;
+	//     top: 0;
+	//     z-index: 0;
+	// }
 
-	.triangleR {
-		width: 0;
-		height: 0;
-	    border-top: 100vh solid $lightgrey;
-	    border-left: 800px solid transparent;
-	    position: absolute;
-	    right: 0;
-	    top: 0;
-	    z-index: 0;
+	.tealBlock {
+		height: 100vh;
+		background-color: $lightteal;
+		width: 38%;
+		position: absolute;
+		top: 0;
+		right: 12%;
+		z-index: 5;
+
+
+		.text {
+			width: 80%;
+			margin: 0 auto;
+			position: relative;
+			top: 70vh;
+		}
 	}
 
 	.headerText {
-		margin: auto;
-		border: .4rem solid $yellow;
-		padding: 5rem 6rem;
+		@include centerer;
+		top: 40%;
+		border: .4rem solid $white;
+		color: $white;
+		padding: 4rem 6rem;
 		z-index: 10;
+
 	}
 }
 
@@ -67,9 +88,241 @@ Hero Section
 	}
 }
 
+
+// Expertise 
+
 .expertise {
 	h2 {
-		text-align: right;
+		line-height: 1.2;
+		margin: 5rem 0;
+		padding-left: 3rem;
+		border-left: 5px solid $darkblue;
 	}
 }
+
+.expertise_item_section {
+	background-color: $lightgrey;
+
+}
+
+.expertise_icon {
+	height: 15rem;
+	position: relative;
+
+	img {
+		@include centerer;
+	}
+}
+
+.expertise_item {
+	float: left;
+	width: 33.3%;
+	text-align: center;
+}
+
+
+// Skills 
+.skills {
+	clear: both;
+
+	h2 {
+		margin: 5rem 0;
+		text-align: right;
+		line-height: 1.2;
+		padding-right: 3rem;
+		border-right: 5px solid $darkblue;
+	}
+}
+
+.skills_item_section {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.skill_item {
+	float: left;
+	width: calc(100% / 7);
+	padding: 2rem;
+	text-align: center;
+
+	.skill_icon {
+		height: 8rem;
+		text-align: center;
+		position: relative;
+
+		img {
+			@include centerer;
+		}
+	}
+}
+
+
+// Work / Portfolio
+
+.work {
+	clear: both;
+
+	h2 {
+		text-align: center;
+	}
+}
+
+.portfolio_item {
+	padding: 5rem 0 ;
+}
+
+.portfolio_item_image, .portfolioInfo {
+	float: left;
+}
+
+.portfolio_item_image {
+	width: 55%;
+}
+
+.portfolioInfo {
+	width: 35%;
+	margin: 5%;
+	padding: 0 1rem;
+	text-align: left;
+
+	.seeLiveButton {
+		margin: 4rem 0;
+
+		a {
+			padding: 1rem 2.5rem;
+			background-color: $yellow;
+			color: $white;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-size: 13px;
+		}
+	}
+}
+
+
+
+// Contact 
+
+.contact {
+	clear: both;
+}
+
+
+
+
+/*
+====================================
+Contact / Form / Footer
+====================================
+*/
+
+// Contact 
+#contact h2 {
+	text-align: right;
+/*	color: #CFB53B;*/
+	line-height: 1;
+}
+
+.contactL {
+	float: left;
+	width: 40%;
+	padding-right: 10px;
+}
+.contactR {
+	float: left;
+	width: 60%;
+}
+
+.contactInfo {
+	color: #0A0A0A;
+	font-weight: 300;
+	margin: 50px 15px 35px 0;
+	text-align: right;
+	color: #667077;
+}
+
+.social {
+	margin: 30px 15px;
+	text-align: right;
+}
+
+.social i {
+	font-size: 3rem;
+	margin-left: 20px;
+	color: #667077 ;
+}
+
+
+
+
+// form
+
+form ul li {
+	list-style: none;
+	margin: 8px 0;
+}
+
+input.myInput, textarea {
+	padding: 10px 15px;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #667077;;
+	background-color: #F8F9F7;
+}
+
+
+li.submitButton {
+	text-align: right;
+}
+
+input.submitButton {
+	width: 100px;
+	margin-top: 20px;
+	padding: 10px;
+	border: 1px solid #24283A;
+	background-color: #F8F9F7;
+	transition: all .3s ease;
+}
+
+input.submitButton:hover {
+	background-color: #BEDFD9;
+	border: 1px solid #BEDFD9;
+}
+
+::-webkit-input-placeholder {
+   color: #667077;;
+   font-weight: 300;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #667077;; 
+   font-weight: 300; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #667077;; 
+   font-weight: 300; 
+}
+
+:-ms-input-placeholder {  
+   color: #667077;;  
+   font-weight: 300;
+}
+
+/*  Footer  */
+
+footer {
+	background-color: #0A0A0A;
+	color: #B2C2BF;
+	padding: 12px 0;
+}
+
+
+footer p {
+	margin: 0;
+	font-weight: 300;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
 

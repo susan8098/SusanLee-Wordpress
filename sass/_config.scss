@@ -15,6 +15,27 @@ $yellow: #FFD75A;
 $white: #F8F9F7;
 $darkblue: #24283B;
 
+/*
+====================================
+Mixin
+====================================
+*/
+
+// Centerer
+@mixin centerer() {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+// Flexbox at Row
+@mixin flexRow() {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
 
 
 /*
@@ -33,10 +54,17 @@ body {
 }
 
 .wrapper {
-	max-width: 1200px;
+	max-width: 1000px;
 	margin: 0 auto;
 	padding: 5rem 0;
 }
+
+.divider {
+	width: 5rem;
+	border-bottom: 2px solid $darkblue;
+	margin: 2rem auto;
+}
+
 
 .content {
 	float: left;
@@ -54,13 +82,13 @@ Fonts
 ====================================
 */
 
-h1, h2 {
+h1, h2, h3 {
 	font-family: $header-font;
 	margin: 0;
 }
 
 h1 {
-	font-size: 9rem;
+	font-size: 8rem;
 	text-align: center;
 	line-height: .8;
 	font-style: italic;
@@ -69,6 +97,11 @@ h1 {
 
 h2 {
 	font-size: 8rem;
+	line-height: 1.1;
+}
+
+h3 {
+	font-size: 2.3rem;
 	line-height: 1.1;
 }
 

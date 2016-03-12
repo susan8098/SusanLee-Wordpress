@@ -1,7 +1,5 @@
 <footer>
-  <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
-  </div>
+	<p>Made with <i class="fa fa-heart"></i> by Susan Lee © 2016</p>
 </footer>
 
 <script>
