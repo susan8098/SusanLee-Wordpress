@@ -20,23 +20,6 @@
 
 </section> <!-- / .Hero Section -->
 
-<!-- Bio -->
-<!-- <section class="about">
-	<div class="wrapper clearfix">
-		
-		<div class="profileImg">
-			<img src=" <?php echo susan_get_thumbnail_url($post) ?> " alt="">
-		</div>
-		
-		<div class="bioText">	
-			<?php // Start the loop ?>
-			<?php if(have_posts()) while(have_posts()) : the_post(); ?>
-				<?php the_content(); ?>
-			<?php endwhile; ?>
-		</div>
-
-	</div>	
-</section> -->
 
 <!-- Expertise -->
 <section class="expertise" id="expertise">
@@ -69,20 +52,67 @@
 	<div class="wrapper">
 
 		<!-- Header Text -->
-		<h2> <?php the_field('skills_text') ?> </h2>
+		<h2> with all the<br> technical skills </h2>
 		
-		<div class="skills_item_section clearfix">
-			<!-- Skills Icon/Text Items Repeater Loop -->
-			<?php while( has_sub_field('skills_items') ) : ?>
+		<div class="skills_item_section">
 
-				<div class="skill_item">
-					<div class="skill_icon">
-						<img src=" <?php the_sub_field('skill_icon') ?> " alt="">
-					</div>
-					<p class="skill_caption"> <?php the_sub_field('skill_caption') ?> </p>
-				</div>
+			<div class="devicon">
+				<i class="devicon-html5-plain"></i>
+				<p>HTML5</p>
+			</div>
+			<div class="devicon">
+				<i class="devicon-css3-plain"></i>
+				<p>CSS3</p>
+			</div>				
+			<div class="devicon">
+				<i class="devicon-javascript-plain"></i>
+				<p>JavaScript</p>
+			</div>
+			<div class="devicon">
+				<i class="devicon-jquery-plain"></i>
+				<p>jQuery</p>
+			</div>
+			<div class="devicon">
+				<i class="devicon-php-plain"></i>
+				<p>PHP</p>
+			</div>			
+			<div class="devicon">
+				<i class="devicon-sass-original"></i>
+				<p>Sass</p>
+			</div>
+			<div class="devicon">
+				<i class="devicon-wordpress-plain"></i>
+				<p>Wordpress</p>
+			</div>
+			<div class="devicon">
+				<i class="devicon-illustrator-plain"></i>
+				<p>Adobe Illustrator</p>
+			</div>
+			<div class="devicon">
+				<i class="devicon-photoshop-plain"></i>
+				<p>Adobe Photoshop</p>
+			</div>
+			<div class="devicon">
+				<img class="sketch" src="wp-content/themes/susan-lee/images/tool-sketch.png" alt="">
+				<p>Sketch</p>
+			</div>	
+			<div class="devicon">
+				<i class="devicon-git-plain"></i>
+				<p>Git</p>
+			</div>
+			<div class="devicon">
+				<i class="devicon-github-plain"></i>
+				<p>Github</p>
+			</div>
+			<div class="devicon">
+				<i class="devicon-gulp-plain"></i>
+				<p>Gulp</p>
+			</div>		
+			<div class="devicon">
+				<i class="devicon-trello-plain"></i>
+				<p>Trello</p>
+			</div>		
 
-			<?php endwhile; // end of repeater loop ?>
 		</div>
 
 

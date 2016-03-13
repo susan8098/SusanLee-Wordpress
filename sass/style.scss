@@ -67,10 +67,10 @@ Hero Section
 
 	.headerText {
 		@include centerer;
-		top: 40%;
-		border: .4rem solid $white;
+		top: 42%;
+		border: .5rem solid $white;
 		color: $white;
-		padding: 4rem 6rem;
+		padding: 4rem 6rem 5rem 6rem;
 		z-index: 10;
 
 	}
@@ -95,7 +95,7 @@ Hero Section
 	h2 {
 		line-height: 1.2;
 		margin: 5rem 0;
-		padding-left: 3rem;
+		padding-left: 4rem;
 		border-left: 5px solid $darkblue;
 	}
 }
@@ -130,37 +130,39 @@ Hero Section
 	clear: both;
 
 	h2 {
-		margin: 5rem 0;
+		margin: 8rem 0 0 0;
 		text-align: right;
 		line-height: 1.2;
-		padding-right: 3rem;
+		padding-right: 5rem;
 		border-right: 5px solid $darkblue;
 	}
 }
 
 .skills_item_section {
+	border-right: 5px solid $darkblue;
 	margin: 0 auto;
 	text-align: center;
+	padding-top: 9rem;
+	padding-right: 2rem;
+	padding-left: 6rem;
 	@include flexRow;
-}
 
-.skill_item {
-	width: calc(100% / 7);
-	padding: 2rem;
-	text-align: center;
+	.devicon {
+		width: calc(100% / 7);
+		margin-bottom: 2rem;
 
-	.skill_icon {
-		height: 8rem;
-		text-align: center;
-		position: relative;
+		i {
+			font-size: 5rem;
+		}
 
+	
 
-		img {
-			@include centerer;
-			width: 80%;
+		.sketch {
+			width: 5.3rem;
 		}
 	}
 }
+
 
 
 // Work / Portfolio
@@ -168,15 +170,17 @@ Hero Section
 .work {
 	clear: both;
 	position: relative;
-	overflow: hidden;
+	padding: 5rem 0 12rem 0 ;
+	overflow-x: hidden;
+	overflow-y: auto;
 
 	.portfolioBackground {
 		position: absolute;
 		background-color: $lightgrey;
-		transform:  translate(-8rem, 0) rotate(9deg);
-		width: 1600px;
-		height: 2600px;
-		top: 10rem;
+		transform:  translate(-15rem, 0) rotate(9deg) ;
+		width: 120%;
+		height: 2400px;
+		top: 18rem;
 		z-index: 1;
 	}
 
@@ -188,6 +192,7 @@ Hero Section
 
 	h2 {
 		text-align: center;
+		margin-bottom: 5rem;
 		z-index: 5;
 	}
 }

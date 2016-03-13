@@ -13,18 +13,21 @@
 
 <body <?php body_class(); ?>>
 
+<div class="darklayer">
+</div>
+
 <header>
     <!-- Nav Bars -->
     <div id="threeLines">
       <div id="line"></div>
     </div>
     <!--  -->
-<nav>
-  <?php wp_nav_menu( array(
-    'container' => 'ul',
-    'theme_location' => 'primary'
-  )); ?>
-</nav>
+  <nav>
+    <?php wp_nav_menu( array(
+      'container' => 'ul',
+      'theme_location' => 'primary'
+    )); ?>
+  </nav>
 </header>
 
 
