@@ -13,10 +13,10 @@
 
 <body <?php body_class(); ?>>
 
-<div class="darklayer">
-</div>
+
 
 <header>
+
     <!-- Nav Bars -->
     <div id="threeLines">
       <div id="line"></div>

@@ -1,7 +1,7 @@
 
 <?php get_header() ?>
 
-<section class="hero" style=" background: url(' <?php echo susan_get_thumbnail_url($post) ?> '); background-size: cover">
+<section class="hero" id="hero" style=" background: url(' <?php echo susan_get_thumbnail_url($post) ?> '); background-size: cover">
 	<div class="tealBlock">
 
 		<div class="text">
@@ -144,7 +144,7 @@
 					<div class="divider"></div>
 					<p> <?php the_sub_field('portfolio_item_description') ?> </p>
 					<div class="seeLiveButton">
-						<p><a href="#">See it Live</a></p>
+						<p><a href=" <?php the_sub_field('link') ?> " target="blank">See it Live</a></p>
 					</div>
 					<h4> <?php the_sub_field('portfolio_item_skills') ?> </h4>
 				</div>

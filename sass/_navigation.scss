@@ -14,7 +14,7 @@ header {
 
 nav {
 	height: 100vh;
-	width: 42rem;
+	width: 40rem;
 	background-color: white;
 	display: none;
 	position: fixed;
@@ -29,22 +29,25 @@ nav {
   height: 60px;
   cursor: pointer;
   position: absolute;
-  right: 14rem;
+  right: 11rem;
   top: 5rem;
   transition: all .5s ease;
   z-index: 10;
 
   &.active{
 	transform: translateX(-6rem);
+
     #line {
     	background: transparent;
 
     	&:before {
     		transform: rotate(-405deg) translateX(-10px) translateY(5px);
+    		background: $yellow;
     	}
 
     	&:after {
     	 	transform: rotate(-315deg) translateX(-8px) translateY(-4px);
+    	 	background: $yellow;
     	}
     }
   }
@@ -88,6 +91,7 @@ ul.menu {
 	font-family: $header-font;
 	font-weight: 900;
 	padding: 0;
+	text-align: center;
 	@include centerer;
 
 	li {
