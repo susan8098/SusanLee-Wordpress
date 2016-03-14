@@ -14,6 +14,7 @@
 @import 'comments';
 @import 'footer';
 
+
 /*
 ====================================
 Hero Section
@@ -22,6 +23,7 @@ Hero Section
 
 .hero {
 	height: 100vh;
+	width: 100%;
 	position: relative;
 	z-index: 0;
 	
@@ -139,7 +141,7 @@ Hero Section
 }
 
 .skills_item_section {
-	border-right: 5px solid $darkblue;
+	border-right: 4px solid $darkblue;
 	margin: 0 auto;
 	text-align: center;
 	padding-top: 9rem;
@@ -170,7 +172,7 @@ Hero Section
 .work {
 	clear: both;
 	position: relative;
-	padding: 5rem 0 12rem 0 ;
+	padding: 5rem 0 3rem 0 ;
 	overflow-x: hidden;
 	overflow-y: auto;
 
@@ -179,7 +181,7 @@ Hero Section
 		background-color: $lightgrey;
 		transform:  translate(-15rem, 0) rotate(9deg) ;
 		width: 120%;
-		height: 2400px;
+		height: 2500px;
 		top: 18rem;
 		z-index: 1;
 	}
@@ -197,10 +199,18 @@ Hero Section
 	}
 }
 
+ .portfolio_item:nth-child(2n) .portfolio_item_image, 
+ .portfolio_item:nth-child(2n) .portfolioInfo {
+	float: right;
+	text-align: right;
+	.divider {
+		margin-right: 0;
+	}
+}
 
 .portfolio_item {
 	padding: 5rem 0 ;
-
+	
 }
 
 .portfolio_item_image, .portfolioInfo {
@@ -219,28 +229,40 @@ Hero Section
 
 	.divider {
 		margin-left: 0;
+		width: 100%;
 	}
 
 	.seeLiveButton {
-		margin: 4rem 0;
+		margin: 3rem 0;
 
 		a {
-			padding: 1rem 2.5rem;
+			font-family: $body-font;
+			padding: .8rem 2.5rem;
 			background-color: $yellow;
-			color: $white;
+			color: white;
 			text-transform: uppercase;
-			letter-spacing: 2px;
+			letter-spacing: 1px;
 			font-size: 13px;
+			font-weight: 900;
+			transition: all .3s;
+
+			&:hover {
+				background-color: $darkblue;
+			}
 		}
 	}
 }
 
 
+.profilePic {
+	margin: 0 auto;
+	width: 28rem;
+	position: relative;
+	z-index: 10;
 
-// Contact 
-
-.contact {
-	clear: both;
+	img {
+		border-radius: 50%;
+	}
 }
 
 
@@ -251,41 +273,56 @@ Hero Section
 Contact / Form / Footer
 ====================================
 */
+// Contact 
+
+.contact {
+	clear: both;
+}
 
 // Contact 
-#contact h2 {
+#contact h4 {
 	text-align: right;
-/*	color: #CFB53B;*/
 	line-height: 1;
+	font-size: 11rem;
 }
 
 .contactL {
 	float: left;
-	width: 40%;
+	width: 35%;
 	padding-right: 10px;
 }
 .contactR {
 	float: left;
-	width: 60%;
+	width: 65%;
 }
 
 .contactInfo {
 	color: #0A0A0A;
-	font-weight: 300;
+	font-weight: 400;
 	margin: 50px 15px 35px 0;
 	text-align: right;
 	color: #667077;
+
+	a {
+		color: $darkblue;
+	}
 }
 
 .social {
 	margin: 30px 15px;
 	text-align: right;
+	
+	a {
+		color: $darkblue;
+		font-family: $body-font;
+	}
 }
 
 .social i {
-	font-size: 3rem;
-	margin-left: 20px;
-	color: #667077 ;
+	font-size: 2rem;
+	margin-left: 1rem;
+	margin-right: .3rem;
+	color: $darkblue;
 }
 
 
@@ -349,16 +386,85 @@ input.submitButton:hover {
 
 footer {
 	background-color: #0A0A0A;
-	color: #B2C2BF;
+	color: grey;
 	padding: 12px 0;
+	font-family: $body-font;
 }
-
 
 footer p {
 	margin: 0;
 	font-weight: 300;
-	font-size: 1.2rem;
+	letter-spacing: 1.2px;
+
 	text-align: center;
+}
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	.skills_item_section {
+		padding-right: 5rem;
+		padding-left: 0;
+	}
+	.portfolioInfo {
+		margin: 0 0 0 5%;
+		padding: 0;
+	}
+
+	.portfolio_item:nth-child(2n) .portfolioInfo {
+		margin: 0 5% 0 0;
+	}
+
+	.work .portfolioBackground {
+		height: 2000px;
+		transform: translate(-12rem,0) rotate(8deg);
+	}
+
+	#threeLines {
+		right: 7rem;
+	}
+}
+ 
+@media (max-width: 840px) {
+	h1 {
+		font-size: 10rem;
+	}
+
+	#contact h4 {
+		font-size: 8.5rem;
+	}
+
+	nav {
+		width: 35rem;
+
+		ul.menu li {
+			font-size: 4rem;
+		}
+	}
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 650px) {
+	
+}
+ 
+@media (max-width: 560px) {
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 490px) {
+
+}
+
+@media (max-width: 400px) {
+
+
 }
 
 

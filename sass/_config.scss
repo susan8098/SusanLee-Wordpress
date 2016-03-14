@@ -68,9 +68,10 @@ img {
 }
 
 .divider {
-	width: 5rem;
-	border-bottom: 2px solid $darkblue;
-	margin: 2rem auto;
+	width: 10rem;
+	border-bottom: 1px solid $darkblue;
+	margin: 2rem 0 1rem 0;
+	display: inline-block;
 }
 
 
@@ -90,7 +91,7 @@ Fonts
 ====================================
 */
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
 	font-family: $header-font;
 	margin: 0;
 }
@@ -109,7 +110,7 @@ h2 {
 }
 
 h3 {
-	font-size: 5rem;
+	font-size: 4rem;
 	line-height: 1.1;
 }
 

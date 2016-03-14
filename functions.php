@@ -70,7 +70,7 @@ function hackeryou_scripts() {
   wp_enqueue_script(
     'plugins', //handle
     get_template_directory_uri() . '/js/plugins.js', //source
-    false, //dependencies
+    array( 'jquery'), //dependencies
     null, // version number
     true //load in footer
   );

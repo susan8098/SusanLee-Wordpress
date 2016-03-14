@@ -127,7 +127,8 @@
 		
 		<!-- Header Text -->
 		<h2> <?php the_field('portfolio_text') ?> </h2>
-
+		
+		<div class="portfolioWrapper">
 		<!-- Portfolio Items Repeater Loop -->
 		<?php while( has_sub_field('portfolio_items') ) : ?>
 			
@@ -144,19 +145,23 @@
 					<div class="divider"></div>
 					<p> <?php the_sub_field('portfolio_item_description') ?> </p>
 					<div class="seeLiveButton">
-						<p><a href=" <?php the_sub_field('link') ?> " target="blank">See it Live</a></p>
+						<p><a href=" <?php the_sub_field('link') ?> " target="blank">View it Live</a></p>
 					</div>
-					<h4> <?php the_sub_field('portfolio_item_skills') ?> </h4>
+					<p> <strong> <?php the_sub_field('portfolio_item_skills') ?> </strong> </p>
 				</div>
 
 			</div>
 
 			
 		<?php endwhile; // end of repeater loop ?>
-	
+		</div>
 	</div>
 
+	<div class="profilePic">
+		<img src=" <?php the_field('profile_picture') ?> " alt="">
+	</div>
 </section>
+
 
 
 <!-- Contact -->
@@ -164,7 +169,7 @@
 	<div class="wrapper clearfix">
 
 		<div class="contactL">
-			<h2>Say Hello</h2>
+			<h4>Say Hello</h4>
 			<div class="contactInfo">
 				<p>My name is Susan Lee <br>
 				I live in Toronto, Canada</p>
@@ -173,7 +178,7 @@
 			<div class="social">
 				<a href="https://twitter.com/helloSusan_code" target="blank"><i class="fa fa-twitter"></i></a>
 				<a href="https://ca.linkedin.com/in/hellosusan" target="blank"><i class="fa fa-linkedin"></i></a>
-				<a href="https://www.instagram.com/hellosusan__/" target="blank"><i class="fa fa-instagram"></i></a>
+				<a href="https://www.instagram.com/hellosusan__/" target="blank"><i class="fa fa-instagram"></i> </a>
 			</div>
 		</div>
 
@@ -198,6 +203,8 @@
 	</div>
 	
 </section>
+
+
 
 
 <!-- Footer -->

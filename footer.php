@@ -1,6 +1,7 @@
 <footer>
-	<p>Made with <i class="fa fa-heart"></i> by Susan Lee © 2016</p>
+	<p>Designed & Developed by Susan Lee © 2016 Copyright</p>
 </footer>
+
 
 <script>
 // scripts.js, plugins.js and jquery are enqueued in functions.php
