@@ -6,10 +6,11 @@
 
 		<div class="text">
 			<p><strong>Hello, I am Susan <br>
-			I am a Designer + Front-End Developer
+			a Designer + Front-End Developer based in Toronto.
 			</strong></p>
 
-			<p>I currently reside in Toronto. Originally from Taipei Taiwan.I am super passionate about creating beautiful and functional digital experiences for the web.</p>
+			<p>Born in Taipei, raised all over the world, I am a lover of culture, design, and all things internet. With a background in graphic design, UX and web development, I am passionate about creating beautiful and intuitive digital experiences for the web with clean and semantic code.</p>
+	
 		</div>
 
 	</div>

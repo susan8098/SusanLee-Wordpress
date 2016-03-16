@@ -18,6 +18,6 @@ $(function(){
 
 	jQuery("h2").fitText(0.7, { minFontSize: '20px', maxFontSize: '110px'});
 	jQuery("h3").fitText(0.7, { minFontSize: '24px', maxFontSize: '45px'});
-	jQuery("p").fitText(0.6, { minFontSize: '11px', maxFontSize: '15px'});
+	jQuery("p").fitText(0.6, { minFontSize: '13px', maxFontSize: '14px'});
 
 });

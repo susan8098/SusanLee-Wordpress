@@ -29,13 +29,13 @@ nav {
   height: 60px;
   cursor: pointer;
   position: absolute;
-  right: 11rem;
+  right: 9rem;
   top: 5rem;
   transition: all .5s ease;
   z-index: 10;
 
   &.active{
-	transform: translateX(-6rem);
+	transform: translateX(-8rem);
 
     #line {
     	background: transparent;

@@ -97,7 +97,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-	font-size: 12rem;
+	font-size: 11rem;
 	text-align: center;
 	line-height: .8;
 	font-style: italic;
@@ -129,6 +129,7 @@ a {
 p {
 	line-height: 1.5;
 	font-family: $body-font;
+	font-size: 1.2rem;
 }
 
 /*blockquotes*/
