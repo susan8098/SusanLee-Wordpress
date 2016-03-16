@@ -8,11 +8,14 @@ $(function(){
 		$('header').toggleClass("darken")
 	});
 
-	$('a').click(function(){
+	$('ul.menu a').click(function(){
 	    $('html, body').animate({
 	        scrollTop: $( $.attr(this, 'href') ).offset().top
 	    }, 300);
 	    return false;
+	    $('nav').animate({
+	    	width: '0px'
+	    })
 	});
 
 

@@ -5,11 +5,11 @@
 	<div class="tealBlock">
 
 		<div class="text">
-			<p><strong>Hello, I am Susan <br>
+			<p><strong>Hello, I'm Susan <br>
 			a Designer + Front-End Developer based in Toronto.
 			</strong></p>
 
-			<p>Born in Taipei, raised all over the world, I am a lover of culture, design, and all things internet. With a background in graphic design, UX and web development, I am passionate about creating beautiful and intuitive digital experiences for the web with clean and semantic code.</p>
+			<p>Born in Taipei, raised all over the world, I am a lover of culture, design, and all things internet. With a background in graphic design, UX and web development, I'm passionate about creating beautiful and intuitive digital experiences for the web with writing clean and semantic code.</p>
 	
 		</div>
 

@@ -111,12 +111,14 @@ ul.menu {
 				background: transparent;
 				transition: all .5s ease;
 			}
-
-			&:hover:after {
-				width: 100%;
-				background: $yellow;	
-			}
 			
+			@media all and (min-width: 900px) {
+				&:hover:after {
+					width: 100%;
+					background: $yellow;	
+				}
+				
+			}
 		}
 	}
 }
