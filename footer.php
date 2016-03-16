@@ -1,7 +1,6 @@
 <footer>
-	<p>Designed & Developed by Susan Lee © 2016 Copyright</p>
+	<p>Designed & Developed by Susan Lee © 2016 Copyright / Photo by Pam Lau </p>
 </footer>
-
 
 <script>
 // scripts.js, plugins.js and jquery are enqueued in functions.php

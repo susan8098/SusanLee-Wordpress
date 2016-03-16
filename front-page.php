@@ -5,11 +5,11 @@
 	<div class="tealBlock">
 
 		<div class="text">
-			<p><strong>Hello, I'm Susan <br>
-			a Designer + Front-End Developer based in Toronto.
+			<p><strong>Hello, I'm Susan. <br>
+			I'm a Designer + Front-End Developer based in Toronto.
 			</strong></p>
 
-			<p>Born in Taipei, raised all over the world, I am a lover of culture, design, and all things internet. With a background in graphic design, UX and web development, I'm passionate about creating beautiful and intuitive digital experiences for the web with writing clean and semantic code.</p>
+			<p>Born in Taipei and raised all over the world, I am a lover of culture, design, and all things internet. I have a background in graphic design, UX and web development. I'm passionate about creating beautiful and intuitive digital experiences for the web by writing clean and semantic code.</p>
 	
 		</div>
 
@@ -43,6 +43,9 @@
 			  	<div class="divider"></div>
 			  	<p class="expertise_caption"> <?php the_sub_field('expertise_caption') ?> </p>
 			  </div>
+			  <!--  -->
+			  <!-- Icons provided from The Noun Project -->
+			  <!--  -->
 			<?php endwhile; // end of repeater loop  ?>
 		</div>
 	</div>
