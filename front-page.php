@@ -190,15 +190,15 @@
 			<form method="post" action="http://www.focuspocus.io/magic/susan8098@gmail.com">
 			 <ul>
 				 <li>
-				 	<input type="text" class="myInput" placeholder="Name" name="fristName">
+				 	<input type="text" class="myInput" placeholder="Name" name="Name" required>
 				 </li>
 				 <li>
-				 	<input type="email" class="myInput" placeholder="Email" name="fristName">
+				 	<input type="email" class="myInput" placeholder="Email" name="Email" required>
 				 </li>
 				  <li>
-				 	<input type="text" class="myInput" placeholder="Subject" name="Subject">
+				 	<input type="text" class="myInput" placeholder="Subject" name="Subject" required>
 				 </li>
-				 <li><textarea name="message" placeholder="Message" id="" cols="30" rows="15"></textarea></li>
+				 <li><textarea name="message" placeholder="Message" id="" cols="30" rows="15" required></textarea></li>
 				 <li class="submitButton"><input type="submit" class="submitButton" value="SEND"></li>
 			 </ul>
 			</form>
